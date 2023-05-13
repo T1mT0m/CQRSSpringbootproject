@@ -1,0 +1,24 @@
+package com.github.bwar.sp.eventdriven.cqrs.command.api.aggregate;
+
+import java.math.BigDecimal;
+
+import org.axonframework.modelling.command.AggregateIdentifier;
+import org.axonframework.spring.stereotype.Aggregate;
+
+import com.github.bwar.sp.eventdriven.cqrs.command.api.commands.CreateProductCommand;
+
+@Aggregate
+public class ProductAggregate {
+	
+	@AggregateIdentifier
+	private String productId;
+	private String name;
+	private BigDecimal price;
+	private Integer quantity;
+	
+	public ProductAggregate(CreateProductCommand createProductCommand) {
+		
+	}
+	
+	public ProductAggregate() {}
+}

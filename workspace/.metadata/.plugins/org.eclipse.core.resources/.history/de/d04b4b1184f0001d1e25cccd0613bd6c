@@ -1,0 +1,5 @@
+package com.github.bwar.sp.eventdriven.cqrs.command.api.controller;
+
+public class ProductCommandController {
+
+}
